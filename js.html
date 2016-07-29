@@ -77,9 +77,18 @@
 
 
       //sual-7
-      for (var i = 5;i<=50; i++) {
+      for (var i = 5;i<=2016; i++) {
        
-         	
+         	f=false;
+        for (var j = 2;j<=i;j++) {
+         if (i%j==0 && j!=i) {
+              f=true;
+         }
+          }
+         if (f==false) {
+          document.write(i+" ,");
+         }
+       
       }
 </script>
 </body>
